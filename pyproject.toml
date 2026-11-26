@@ -1,0 +1,43 @@
+[project]
+name = "pixel-font-source"
+version = "0.0.0"
+description = "A library for managing pixel font sources, including bitmap glyphs, character mappings, variants, metrics, and kerning"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+    { name = "TakWolf" },
+]
+maintainers = [
+    { name = "TakWolf" },
+]
+keywords = ["font", "pixel", "bitmap"]
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: 3.15",
+    "Operating System :: OS Independent",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/TakWolf/pixel-font-source"
+Source = "https://github.com/TakWolf/pixel-font-source"
+Issues = "https://github.com/TakWolf/pixel-font-source/issues"
+
+[build-system]
+requires = ["uv_build"]
+build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]
